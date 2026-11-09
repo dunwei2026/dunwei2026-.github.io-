@@ -1,51 +1,109 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>盾卫杀毒 下载中心</title>
-  <style>
-    /* ===== 下面都是管"样子"的代码,先不用懂 ===== */
-    body {
-      background-color: #0d1b2a;   /* 页面背景色(深蓝),想换颜色就改#后面6位 */
-      text-align: center;          /* 内容居中 */
-      font-family: "Microsoft YaHei", sans-serif;
-      padding-top: 60px;
-    }
-    h1 {
-      color: #ffffff;              /* 大标题颜色(白) */
-      font-size: 40px;
-    }
-    .intro {
-      color: #bbbbbb;              /* 介绍文字颜色(浅灰) */
-      font-size: 18px;
-      max-width: 500px;
-      margin: 20px auto;
-      line-height: 1.8;
-    }
-    .btn {
-      display: block;              /* 每个按钮独占一行 */
-      width: 260px;
-      margin: 16px auto;           /* 居中 */
-      padding: 16px 0;
-      border-radius: 30px;         /* 圆角 */
-      font-size: 20px;
-      color: #ffffff;
-      text-decoration: none;
-    }
-    .btn-main {
-      background-color: #2e9e4f;   /* 大下载按钮(绿) */
-    }
-    .btn-other {
-      background-color: #455a64;   /* 第二个按钮(灰) */
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>盾卫杀毒 · 下载中心</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 0;
+    background: #0d1b2a;
+    color: #e6edf3;
+    font-family: "Microsoft YaHei", -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 56px 20px 40px; }
+  header { text-align: center; margin-bottom: 44px; }
+  h1 { font-size: 40px; margin: 0 0 14px; letter-spacing: 3px; }
+  .ver { display: inline-block; background: #2e9e4f; color: #fff; font-size: 14px; padding: 4px 16px; border-radius: 20px; margin-bottom: 18px; }
+  .lead { color: #9fb3c8; font-size: 17px; line-height: 1.9; margin: 0; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-bottom: 36px; }
+  .card { background: #131f31; border: 1px solid #22344a; border-radius: 14px; padding: 24px 20px; display: flex; flex-direction: column; }
+  .card h2 { font-size: 19px; margin: 0 0 8px; }
+  .tag { font-size: 12px; color: #7f96ad; margin-bottom: 14px; word-break: break-all; line-height: 1.7; }
+  .card p { font-size: 14px; color: #9fb3c8; line-height: 1.85; margin: 0 0 20px; flex: 1; }
+  .btn { display: block; text-align: center; padding: 13px 0; border-radius: 10px; font-size: 16px; color: #fff; text-decoration: none; background: #2e9e4f; }
+  .btn:hover { background: #37b35c; }
+  .btn.grey { background: #33475d; }
+  .btn.grey:hover { background: #3f5670; }
+  .sec { background: #131f31; border: 1px solid #22344a; border-radius: 14px; padding: 26px 24px; margin-bottom: 22px; }
+  .sec h3 { margin: 0 0 16px; font-size: 18px; }
+  .sec ul { margin: 0; padding-left: 20px; color: #9fb3c8; font-size: 15px; line-height: 2.1; }
+  .sec ol { margin: 0; padding-left: 20px; color: #9fb3c8; font-size: 15px; line-height: 2.1; }
+  .old { display: flex; gap: 12px; flex-wrap: wrap; }
+  .old .btn { flex: 1 1 260px; font-size: 15px; }
+  footer { text-align: center; font-size: 13px; color: #5c748b; padding: 26px 0 0; line-height: 1.9; }
+  @media (max-width: 860px) {
+    .grid { grid-template-columns: 1fr; }
+    h1 { font-size: 32px; }
+    .wrap { padding-top: 36px; }
+  }
+</style>
 </head>
 <body>
-  <h1>盾卫杀毒</h1>
-  <p class="intro">专治锁机病毒、拉满音量、篡改壁纸。<br>装一个,安心用手机。</p>
+<div class="wrap">
+  <header>
+    <h1>盾卫杀毒</h1>
+    <div class="ver">7.0 三件套</div>
+    <p class="lead">专治锁机病毒、拉满音量、篡改壁纸。<br>装一个，安心用手机。</p>
+  </header>
 
-  <a class="btn btn-main" href="https://github.com/dunwei2026/dunwei2026-.github.io-/releases/download/1.0/-ShieldScan-.apk">盾卫防火墙 安卓版</a>
-  <a class="btn btn-other" href="https://github.com/dunwei2026/dunwei2026-.github.io-/releases/download/1.0/default.exe">盾卫防火墙 电脑版</a>
+  <div class="grid">
+    <div class="card">
+      <h2>主 App · 盾卫杀毒</h2>
+      <div class="tag">com.shieldscan.av<br>138 MB · 含离线病毒库</div>
+      <p>完整版。100 项功能中心、靶子反制、实时监控、深度扫描全在这一个包里。</p>
+      <a class="btn" href="https://github.com/dunwei2026/dunwei2026-.github.io-/releases/download/7.0/ShieldScan-7.0.apk">下载安卓版</a>
+    </div>
+
+    <div class="card">
+      <h2>护盾版 · 盾卫安全护盾</h2>
+      <div class="tag">com.shieldscan.shield<br>1.8 MB · 轻量无病毒库</div>
+      <p>只有 1.8 MB，不带离线病毒库，靠行为判定拦锁机。适合低配机、或当主 App 的备份自保。</p>
+      <a class="btn" href="https://github.com/dunwei2026/dunwei2026-.github.io-/releases/download/7.0/ShieldScan-Shield-7.0.apk">下载安卓版</a>
+    </div>
+
+    <div class="card">
+      <h2>Plus 版 · 盾卫Plus</h2>
+      <div class="tag">com.shieldscan.plus<br>138 MB · 7.0.0-PLUS</div>
+      <p>完整版带 Plus 标识，含离线病毒库。和主 App 可同时装，互不覆盖。</p>
+      <a class="btn" href="https://github.com/dunwei2026/dunwei2026-.github.io-/releases/download/7.0/ShieldScan-Plus-7.0.apk">下载安卓版</a>
+    </div>
+  </div>
+
+  <div class="sec">
+    <h3>7.0 新增</h3>
+    <ul>
+      <li>100 项功能中心：系统信息、垃圾清理、网络诊断、隐私检查、系统控制、显示调节、调试工具、设备档案</li>
+      <li>靶子反制：识别冒名攻击包，撤掉它的悬浮窗和 Shizuku 授权，可冻结、可卸载</li>
+      <li>修复扫描误伤：系统应用不再被当成病毒</li>
+      <li>日常守护：摇一摇 / 音量减连按三下紧急拦截</li>
+    </ul>
+  </div>
+
+  <div class="sec">
+    <h3>安装说明</h3>
+    <ol>
+      <li>点上面的按钮下载 APK，手机会提示「未知来源」——在系统设置里允许浏览器或文件管理器安装即可。</li>
+      <li>三个包名不同，可以同时安装，不会互相覆盖，也不会互相顶掉数据。</li>
+      <li>第一次打开会申请悬浮窗、无障碍等权限，不给权限部分拦截功能用不起来。</li>
+      <li>要系统级拦截需要 root 或 Shizuku 授权，普通权限能用的功能不受影响。</li>
+    </ol>
+  </div>
+
+  <div class="sec">
+    <h3>旧版入口</h3>
+    <p style="color:#7f96ad;font-size:14px;margin:0 0 16px;">下面两个是 1.0 时期的旧文件，留着以防有人还在用。</p>
+    <div class="old">
+      <a class="btn grey" href="https://github.com/dunwei2026/dunwei2026-.github.io-/releases/download/1.0/-ShieldScan-.apk">旧版安卓 1.0</a>
+      <a class="btn grey" href="https://github.com/dunwei2026/dunwei2026-.github.io-/releases/download/1.0/default.exe">电脑版 1.0</a>
+    </div>
+  </div>
+
+  <footer>
+    盾卫杀毒 ShieldScan · 7.0<br>
+    本页所有安装包均为本地构建、自签名，未上架应用商店。
+  </footer>
+</div>
 </body>
 </html>
-
